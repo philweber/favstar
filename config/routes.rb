@@ -1,4 +1,9 @@
 Favstar::Application.routes.draw do
+
+  get 'tweets/:tweet_id' => 'tweets#get', :as => :get_tweet
+  post 'tweets/get' => 'tweets#post'
+  root :to => 'tweets#get'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

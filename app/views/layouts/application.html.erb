@@ -1,14 +1,54 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Favstar</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+<html lang='en'>
+    <head>
+        <title><%=h yield(:title) %></title>
+        <meta charset='utf-8'>
+        <meta content='text/html;charset=UTF-8' http-equiv='Content-type'>
+		<%= stylesheet_link_tag "application" %>
+    </head>
+    <body class='fs-desktop'>
+        <div id='fs-top-glow'>
+        </div>
+        <div id='fs-root'>
+            <div id='fs-header-bar'>
+                <div class='fs-logo-container'>
+                    <div class='fs-logo'>
+                    </div>
+                </div>
+            </div>
+            <div id='fs-root-scroll-container'>
+                <div class='fs-feed-msg fs-job'>
+                    <div class='fs-tree-icon'>
+                    </div>
+                    
+					<%= yield %>                    
 
-<%= yield %>
+                </div>
+            </div>
 
-</body>
+            <div class='fs-default fs-no-select' id='fs-feed-header'>
+                <!-- Fold structure. -->
+                <div class='fs-fold-container'>
+                    <div class='fs-fold fs-left'>
+                    </div>
+                    <div class='fs-shadow'>
+                    </div>
+                    <div class='fs-fold fs-right'>
+                    </div>
+                </div>
+                <div class='fs-content'>
+                    <!-- Title. -->
+                    <h1 class='fs-ellipsis'>
+                        <%=h yield(:title) %>
+                    </h1>
+                </div>
+            </div>
+            <div id='fs-fixed-left'>
+                <!-- Render side-bar menus. -->
+            </div>
+            <div id='fs-fixed-right'>
+            </div>
+        </div>
+    </body>
 </html>
+

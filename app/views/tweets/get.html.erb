@@ -1,0 +1,14 @@
+<% content_for :title, "Favstar Rails Demo" %>
+
+<h3>Please Enter a Tweet ID: </h3>
+
+<%= form_tag do %>
+	<%= text_field_tag(:tweet_id) %>
+	<div class='fs-buttons'>
+		<%= submit_tag("Go get it") %>
+	</div>
+<% end %>
+
+<div id="tweet_text" class='fs-content'>
+  <%= @tweet_text %>
+</div>
