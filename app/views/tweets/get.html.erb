@@ -14,5 +14,6 @@
 </div>
 
 <div id="tweet_text">
-  <%= @tweet_text %>
+  <%= auto_link(@tweet_text, 
+    :html => {:target => '_blank'}) %>
 </div>
