@@ -1446,7 +1446,7 @@ body.fs-ios .fs-header-dropdown-panel {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) { 
 	#fs-header-bar>.fs-logo-container>.fs-logo {
 	    background-position: 0px -204px;
-        background-image:asset-url("logo.png", image);
+        background-image:asset-url("logo_mobile.png", image);
 	    -webkit-background-size: 108px auto;
 	    background-size: 108px auto;
 	}
@@ -2220,7 +2220,7 @@ body.fs-iphone .fs-upsell .fs-body {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) { 
 	.fs-fold.fs-left {
 	    background-position: 0px -1689px;
-        background-image:asset-url("fs_fold.png", image);
+        background-image:asset-url("fs_fold_mobile.png", image);
 	    -webkit-background-size: 108px auto;
 	    background-size: 108px auto;
 	}
@@ -2236,7 +2236,7 @@ body.fs-iphone .fs-upsell .fs-body {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) { 
 	.fs-fold.fs-right {
 	    background-position: 0px -1696px;
-        background-image:asset-url("fs_fold.png", image);
+        background-image:asset-url("fs_fold_mobile.png", image);
 	    -webkit-background-size: 108px auto;
 	    background-size: 108px auto;
 	}
@@ -2470,7 +2470,7 @@ body.fs-iphone .fs-meta {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) { 
 	.fs-tree-icon {
 	    background-position: 0px -1123px;
-	    background-image:asset-url("fs_tree_icon.png", image);
+	    background-image:asset-url("fs_tree_icon_mobile.png", image);
 	    -webkit-background-size: 108px auto;
 	    background-size: 108px auto;
 	}
